@@ -3,11 +3,13 @@ body{
 	background-color: #553b7d;
 }
 
-#bootstrap_logo{
-	border: solid 1em white;
-	border-radius: 20px;
+
+h1{
+	text-align: center;
 }
 
-#navbar{
-	border-radius: 0px 0px 20px 20px;
+footer{
+	border : solid 0.6em white;
+	border-radius: 20px;
+	margin-top: 10em;
 }
