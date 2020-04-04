@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta NAME='Author' CONTENT='Renou Antoine'>
+	<meta NAME='Language' CONTENT='fr'>
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/menu.css">
+</head>
+<body class="bg-dark">
+	<div class="container-fluid p-0">
+
+		<header>
+			<nav class="navbar navbar-expand-md navbar-dark p-3" id="navbar">
+				<a class="navbar-brand" href="../index.html">Home</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="#navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<ul class="collapse navbar-collapse align-items-start navbar-nav" id="navbarNavAltMarkup">
+					<li class="nav-item">
+						<a class="nav-link active" href="menu.html">Menu</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link" href="#">Exemples</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Random</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">À propos</a>
+					</li>
+					<li class="nav-item ml-auto">
+						<form class="form-inline">
+							<input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Search">
+							<button class="btn btn-outline-light my-2 my-sm-0 ml-auto" type="submit">Rechercher</button>
+						</form>
+					</li>
+				</ul>	
+
+			</nav>
+		</header>
+
+		<h1 class="text-center text-white mt-5 display-4">Grid</h1>
+
+		<div class="row p-4">
+
+			<div class="col-12 col-md-6">
+				<img class="img-fluid img-thumbnail" src="../images/temp.png">
+			</div>
+
+			<div class="col-12 col-md-6 justify-content-start pt-5 pt-md-0">
+				<p class="text-white border p-2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere libero et lorem mollis ullamcorper. In diam velit, blandit vel lacinia ac, luctus id nisi. Nunc id porttitor lorem, vitae dictum ligula. Suspendisse potenti. In eu turpis ac urna commodo posuere eu eget diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse semper, purus vel cursus rutrum, ex ante lacinia enim, a accumsan mauris purus vitae nisi. In vitae tempus quam, in faucibus lacus. Aliquam finibus mi non turpis pulvinar, sit amet imperdiet massa condimentum. Suspendisse odio lectus, consectetur vel massa vitae, tincidunt malesuada dui. Fusce a tempor augue, sed dignissim velit. Suspendisse ac dolor eu ipsum vulputate sagittis sed ac lacus. Suspendisse tristique, ex at tincidunt gravida, risus lectus blandit est, sed iaculis erat nibh et eros. Cras nisi eros, interdum a mauris nec, imperdiet iaculis ante.
+
+					Sed eu faucibus augue. Pellentesque ut erat commodo, tincidunt justo sed, feugiat metus. In vitae tellus nunc. Nullam sodales augue eu urna convallis iaculis. Cras ac cursus augue. Sed placerat posuere orci, sed ultrices orci. Donec sed est vitae quam ullamcorper congue sed eget augue. Nullam tincidunt enim ligula, et elementum augue fringilla at. Maecenas sit amet tincidunt est, non viverra mi. Cras varius dui a nibh aliquet pellentesque. Sed massa lectus, luctus vel aliquet in, pharetra et lectus. Donec egestas erat at neque commodo vestibulum.
+
+				Suspendisse at purus vel nunc pulvinar maximus. In quis molestie urna, eget maximus erat. Morbi nibh ante, venenatis non bibendum id, venenatis vel est. In eget facilisis ipsum. Nullam vel lobortis libero. Fusce quis augue a dolor commodo blandit quis eu leo. Praesent ultricies eleifend diam et aliquet. Maecenas velit odio, rhoncus sed augue ut, vestibulum elementum quam. Mauris vulputate arcu iaculis odio hendrerit accumsan. Donec a purus enim. </p>
+			</div>
+
+
+
+		</div>
+
+		<div class="row justify-content-center">
+			<h1 class="text-center text-white display-4 pt-0 pb-5">Démonstration</h1>
+		</div>
+		
+		<div class="row mx-4">
+			
+			<div class="col-12 col-md-6">
+				<div id="code" contenteditable="true" spellcheck="false" class="form-control ml-4" style="width: 90%; height: 500px; overflow: auto;">
+					<pre>
+&lt;div class="container border bg-white"&gt;
+
+	&lt;div class="row border"&gt;
+		&lt;div class="col border"&gt;
+			row 1 & col 1 de taille 6
+		&lt;/div&gt;
+		&lt;div class="col border"&gt;
+			row 1 & col 2 de taille 6
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class="row border"&gt;
+		&lt;div class="col border"&gt;
+			row 2 & col 1 de taille 4
+		&lt;/div&gt;
+		&lt;div class="col border"&gt;
+			row 2 & col 2 de taille 4
+		&lt;/div&gt;
+		&lt;div class="col border"&gt;
+			row 2 & col 3 de taille 4
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class="row border"&gt;
+		&lt;div class="col-3 border"&gt;
+			row 3 & col 1 de taille 3
+		&lt;/div&gt;
+		&lt;div class="col-5 border"&gt;
+			row 3 & col 2 de taille 5
+		&lt;/div&gt;
+		&lt;div class="col border"&gt;
+			row 3 & col 3 de taille 4
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class="row border"&gt;
+		&lt;div class="col-12 border"&gt;
+			row 4 & col 1 de taille 12
+		&lt;/div&gt;
+		&lt;div class="col-6 border"&gt;
+			row 4 & col 2 de taille 6
+		&lt;/div&gt;
+		&lt;div class="col-6 border"&gt;
+			row 4 & col 3 de taille 6
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;
+</pre>
+				</div>
+			</div>
+
+			<div id="visuel" class="col-12 col-md-6 m-auto">
+				
+			</div>
+
+		</div>
+	<div class="row">
+		<button onclick="transfer()">Test</button>
+	</div>		
+		<div class="row mt-5 border-top p-4" id="footer">
+			<div class="col-12 text-center">
+
+				Antoine Renou - Source : <a class="btn btn-outline-light rounded border-white" href="https://getbootstrap.com/">Bootstrap</a>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!--Script-->
+	<script src="../bootstrap/js/jquery-3.4.1.min.js"></script>
+	<script src="../bootstrap/js/popper.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/grid.js"></script>
+</body>
+</html>
