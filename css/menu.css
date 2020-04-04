@@ -1,13 +1,21 @@
-#navbar{
-	border-radius: 20px;
-	border: solid 0.2em white;
-}
-
-article a{
-	background-color: blue;
+article button{
 	opacity: 80%;
-	border-radius: 20px !important;
-	border: solid 0.5em white !important;
+	/*border-radius: 20px !important;
+	border: solid 0.5em white !important;*/
+	border-width: 0.5em !important;
 	height: 18em;
 	width: 18em;
+}
+
+#navbar{
+	/*border-radius: 0 0 10px 10px;*/
+	border-bottom: solid 0.2em white;
+	border-top:none;
+	background-color: #553b7d;
+}
+
+#footer{
+	background-color: #553b7d;
+	color: white;
+	border-width: 0.3em !important; 
 }
