@@ -1,0 +1,13 @@
+#navbar{
+	border-radius: 20px;
+	border: solid 0.2em white;
+}
+
+article a{
+	background-color: blue;
+	opacity: 80%;
+	border-radius: 20px !important;
+	border: solid 0.5em white !important;
+	height: 18em;
+	width: 18em;
+}
