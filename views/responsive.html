@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Grid</title>
+	<title>Responsive</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta NAME='Author' CONTENT='Renou Antoine'>
@@ -44,31 +44,37 @@
 			</nav>
 		</header>
 		<!-- Titre -->
-		<h1 class="text-center text-white mt-5 display-4">Système de grille (Grid)</h1>
+		<h1 class="text-center text-white mt-5 display-4">Responsive Web Design</h1>
 
 		<div class="row p-4">
 			<!-- Image -->
 			<div class="col-12 col-md-6 d-flex justify-content-center">
-				<img class="img-fluid img-thumbnail" src="../images/grid_img.png">
+				<img class="img-fluid img-thumbnail" src="../images/responsive_img.png">
 			</div>
 
 			<!-- Présentation -->
 			<div class="col-12 col-md-6 d-flex align-items-center pt-5 pt-md-0">
-				<p class="text-white">Le système de grille de Bootstrap permet de disposer simplement différents composants d'une page.<br/>
+				<p class="text-white">Une des principale valeur de Bootstrap est d'être un framework responsive,
+					c'est à dire que n'importe lequels de ses composants peut s'adapter à différentes taille d'écrans.<br/>
 					<br/>
-					Son utilisation nécessite trois attributs :<br/>
-					&emsp;- .container : qui définit un cadre.<br/>
-					&emsp;- .row : qui définit une ligne dans ce cadre.<br/>
-					&emsp;- .col : qui définit une colonne dans une ligne.<br/>
+					Bootstrap s'adapte à 5 tailles par défauts :<br/>
+					&emsp;- Extra Small, largeur d'écran < 576px - pas de préfixe<br/>
+					&emsp;- Small, largeur d'écran >= 576px - préfixe .sm<br/>
+					&emsp;- Medium, largeur d'écran >= 768px - préfixe .md<br/>
+					&emsp;- Large, largeur d'écran >= 992px - préfixe .lg<br/>
+					&emsp;- Extra Large, largeur d'écran >= 1200px - préfixe .xl<br/>
 					<br/>
-					Une ligne contient au maximum 12 colonnes, on définira la taille d'une colonne à la déclaration de .col (exemple col-3 ou col-6).<br/>
+					Ces différents préfixes peuvent s'utiliser sur certains des attributs Bootstrap <br/>
+					ce qui modifiera l'affichage d'un composant en fonction de la largeur de l'écran de l'utilisateur.<br/>
 					<br/>
-					Une colonne seule dans une ligne dont la taille n'est pas spécifié prendra automatiquement une taille de 12.<br/>
+					Exemples : <br/>
+					&emsp;- les colonnes (col-md-3, col-sm-12, ...) <br/>
+					&emsp;- l'affichage où non d'un block (d-sm-none, d-md-block, ...)<br/>
+					&emsp;- la taille d'un container (container-md, container-sm, ...)<br/>
+					&emsp;- la position d'un élément (float-sm-left, float-xl-right, ...)<br/>
+					&emsp;- le marging et padding (m-md-5, p-xl-4, etc ...)<br/>
 					<br/>
-					Plusieurs colonnes dont la taille ne serait pas spécifiés se diviseront équitablement l'espace de la ligne.<br/>
-					<br/>
-					Si une colonne dépasse la taille maximum d'une ligne elle sera affiché à la ligne suivante.<br/>
-					<a class="btn btn-outline-light float-right" href="https://getbootstrap.com/docs/4.0/layout/grid/">Source</a>
+					Et sans doute bien d'autres !<a class="btn btn-outline-light float-right" href="https://getbootstrap.com/docs/4.4/layout/overview/#responsive-breakpoints">Source</a>
 				</p>
 
 			</div>
@@ -112,9 +118,9 @@
 			</div>
 
 			<div class="col-12 d-flex justify-content-center mb-2">
-				<a class="btn btn-outline-light mx-2" href="#">Flexbox</a>
-				<a class="btn btn-outline-light mx-2" href="responsive.html">Responsive</a>
-				<a class="btn btn-outline-light mx-2" href="#">Margin</a>
+				<a class="btn btn-outline-light mx-2" href="grid.html">Grid</a>
+				<a class="btn btn-outline-light mx-2" href="#">Spacing</a>
+				<a class="btn btn-outline-light mx-2" href="#">Display</a>
 			</div>
 
 			<div class="col-6 d-flex align-items-end">
@@ -148,7 +154,7 @@
 	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/font_awesome.js"></script>
 	<script type="text/javascript" src="../js/demonstration.js"></script>
-	<script type="text/javascript">fill('../html_exemples/grid_exemple.html');</script>
+	<script type="text/javascript">fill('../html_exemples/responsive_exemple.html');</script>
 	<script type="text/javascript">transfer();</script>
 </body>
 </html>

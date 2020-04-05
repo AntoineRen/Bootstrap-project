@@ -1,0 +1,34 @@
+<div class="container-fluid bg-dark">
+
+	<div class="row">
+		<div class="col-6 col-md-12 border bg-light">
+			Colonne de taille 6 sur un ecran < 768px (Small et Extra Small) et de taille 12 sur un ecran > 768px (Medium et +)
+		</div>
+		<div class="col-12 col-md-6 border bg-light">
+			Colonne de taille 12 sur un ecran < 768px (Small et Extra Small) et de taille 6 sur un ecran > 768px (Medium et +)
+		</div>
+		<div class="col-12 d-none border bg-light">
+			Bloc invisible peu importe la taille de l'écran
+		</div>
+		<div class="col-12 d-none d-md-block border bg-primary">
+			Bloc invisible sur un écran < 768px (Small et Extra Small) et visible sur un ecran > 768px (Medium et +)
+		</div>
+		<div class="container-sm bg-secondary">
+			Container prenant 100% de la largeur de l'écran d'un smartphone (<576px) 
+		</div>
+		<div class="container-md bg-warning">
+			Container prenant 100% de la largeur d'un écran <= 768px (Medium et -)
+		</div>
+		<div class="container bg-danger">
+			<p class="float-left float-md-right">
+				Texte à gauche sur un écran de largeur <= 768px (Medium et -) et à droite sinon
+			</p>
+		</div>
+		<div class="container bg-success">
+			<p class="ml-5 ml-sm-0 pt-sm-5">
+				Marging à gauche sur un écran de smartphone (<576px) et padding en haut sinon
+			</p>
+		</div>
+	</div>
+
+</div>
