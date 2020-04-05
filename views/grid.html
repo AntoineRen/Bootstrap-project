@@ -12,6 +12,7 @@
 <body class="bg-dark">
 	<div class="container-fluid p-0">
 
+		<!-- NavBar -->
 		<header>
 			<nav class="navbar navbar-expand-md navbar-dark p-3" id="navbar">
 				<a class="navbar-brand" href="../index.html">Home</a>
@@ -42,51 +43,95 @@
 
 			</nav>
 		</header>
-
-		<h1 class="text-center text-white mt-5 display-4">Grid</h1>
+		<!-- Titre -->
+		<h1 class="text-center text-white mt-5 display-4">Système de grille (Grid)</h1>
 
 		<div class="row p-4">
-
-			<div class="col-12 col-md-6">
-				<img class="img-fluid img-thumbnail" src="../images/temp.png">
+			<!-- Image -->
+			<div class="col-12 col-md-6 d-flex justify-content-center">
+				<img class="img-fluid img-thumbnail" src="../images/grid_img.png">
 			</div>
 
-			<div class="col-12 col-md-6 justify-content-start pt-5 pt-md-0">
-				<p class="text-white border p-2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere libero et lorem mollis ullamcorper. In diam velit, blandit vel lacinia ac, luctus id nisi. Nunc id porttitor lorem, vitae dictum ligula. Suspendisse potenti. In eu turpis ac urna commodo posuere eu eget diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse semper, purus vel cursus rutrum, ex ante lacinia enim, a accumsan mauris purus vitae nisi. In vitae tempus quam, in faucibus lacus. Aliquam finibus mi non turpis pulvinar, sit amet imperdiet massa condimentum. Suspendisse odio lectus, consectetur vel massa vitae, tincidunt malesuada dui. Fusce a tempor augue, sed dignissim velit. Suspendisse ac dolor eu ipsum vulputate sagittis sed ac lacus. Suspendisse tristique, ex at tincidunt gravida, risus lectus blandit est, sed iaculis erat nibh et eros. Cras nisi eros, interdum a mauris nec, imperdiet iaculis ante.
+			<!-- Présentation -->
+			<div class="col-12 col-md-6 d-flex align-items-center pt-5 pt-md-0">
+				<p class="text-white">Le système de grille de Bootstrap permet de disposer simplement différents composants d'une page.<br/>
+					<br/>
+					Son utilisation nécessite trois attributs :<br/>
+					&emsp;- .container : qui définit un cadre.<br/>
+					&emsp;- .row : qui définit une ligne dans ce cadre.<br/>
+					&emsp;- .col : qui définit une colonne dans une ligne.<br/>
+					<br/>
+					Une ligne contient au maximum 12 colonnes, on définira la taille d'une colonne à la déclaration de .col (exemple col-3 ou col-6).<br/>
+					<br/>
+					Une colonne seule dans une ligne dont la taille n'est pas spécifié prendra automatiquement une taille de 12.<br/>
+					<br/>
+					Plusieurs colonnes dont la taille ne serait pas spécifiés se diviseront équitablement l'espace de la ligne.<br/>
+					<br/>
+					Si une colonne dépasse la taille maximum d'une ligne elle sera affiché à la ligne suivante.<br/>
+					<a class="btn btn-outline-light float-right" href="https://getbootstrap.com/docs/4.0/layout/grid/">Source</a>
+				</p>
 
-					Sed eu faucibus augue. Pellentesque ut erat commodo, tincidunt justo sed, feugiat metus. In vitae tellus nunc. Nullam sodales augue eu urna convallis iaculis. Cras ac cursus augue. Sed placerat posuere orci, sed ultrices orci. Donec sed est vitae quam ullamcorper congue sed eget augue. Nullam tincidunt enim ligula, et elementum augue fringilla at. Maecenas sit amet tincidunt est, non viverra mi. Cras varius dui a nibh aliquet pellentesque. Sed massa lectus, luctus vel aliquet in, pharetra et lectus. Donec egestas erat at neque commodo vestibulum.
-
-				Suspendisse at purus vel nunc pulvinar maximus. In quis molestie urna, eget maximus erat. Morbi nibh ante, venenatis non bibendum id, venenatis vel est. In eget facilisis ipsum. Nullam vel lobortis libero. Fusce quis augue a dolor commodo blandit quis eu leo. Praesent ultricies eleifend diam et aliquet. Maecenas velit odio, rhoncus sed augue ut, vestibulum elementum quam. Mauris vulputate arcu iaculis odio hendrerit accumsan. Donec a purus enim. </p>
 			</div>
 
 
 
 		</div>
 
+		<!-- Démonstration -->
 		<div class="row justify-content-center">
 			<h1 class="text-center text-white display-4 pt-0 pb-5">Démonstration</h1>
 		</div>
 		
 		<div class="row mx-4">
-			
-			<div class="col-12 col-md-6">
-				<div contenteditable="true" spellcheck="false" class="form-control ml-4 bg-dark" style="width: 90%; height: 500px; overflow: auto;">
+			<!-- Code -->
+			<div class="col-12 col-md-5">
+				<div contenteditable="true" spellcheck="false" class="form-control ml-4 mb-4 bg-dark" style="width: 90%; height: 500px; overflow: auto;">
+
 					<pre id="code" class="text-white">
 
 					</pre>
 				</div>
 			</div>
 
-			<div id="visuel" class="col-12 mt-sm-4 col-md-6 m-md-auto">
+			<div class="col-12 col-md-2 d-flex justify-content-center align-items-center mt-4">
+				<button class="btn btn-outline-light" onclick="transfer()">Test Code</button>
+			</div>	
+
+			<!-- Visuel -->
+			<div id="visuel" class="col-12 my-3 col-md-5 d-flex align-items-center">
 				
 			</div>
 
 		</div>
-		<div class="row">
-			<div class="col-12 d-flex justify-content-center mt-4">
-				<button class="btn btn-outline-light" onclick="transfer()">Test Code</button>
+		
+		<!-- Aller plus loin -->
+		<div class="row pt-4">
+
+			<div class="col-12 d-flex justify-content-center mb-2">
+				<h4 class="display-5 text-white">Aller plus loin </h4>:
 			</div>
-		</div>		
+
+			<div class="col-12 d-flex justify-content-center mb-2">
+				<a class="btn btn-outline-light mx-2" href="#">Flexbox</a>
+				<a class="btn btn-outline-light mx-2" href="#">Responsive</a>
+				<a class="btn btn-outline-light mx-2" href="#">Margin</a>
+			</div>
+
+			<div class="col-6 d-flex align-items-end">
+				<button type="button" class="btn btn-outline-light ml-5">
+					<i class="fa fa-chevron-left text-left"></i> 
+				</button>
+			</div>
+
+			<div class="col-6 d-flex justify-content-end align-items-end">
+				<button type="button" class="btn btn-outline-light mr-5">
+					<i class="fa fa-chevron-right text-left"></i> 
+				</button>
+			</div>
+
+		</div>
+
+		<!-- Footer -->
 		<div class="row mt-5 border-top p-4" id="footer">
 			<div class="col-12 text-center">
 
@@ -101,6 +146,7 @@
 	<script type="text/javascript" src="../bootstrap/js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="../bootstrap/js/popper.min.js"></script>
 	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/font_awesome.js"></script>
 	<script type="text/javascript" src="../js/demonstration.js"></script>
 	<script type="text/javascript">fill('../html_exemples/grid_exemple.html');</script>
 	<script type="text/javascript">transfer();</script>
