@@ -44,35 +44,67 @@
 			</nav>
 		</header>
 		<!-- Titre -->
-		<h1 class="text-center text-white mt-5 display-4">Système de grille (Grid)</h1>
+		<h1 class="text-center text-white mt-5 display-4">Padding & Margin</h1>
 
 		<div class="row p-4">
 			<!-- Image -->
 			<div class="col-12 col-md-6 d-flex justify-content-center">
-				<img class="img-fluid img-thumbnail" src="../images/grid_img.png">
+				<img class="img-fluid img-thumbnail" src="../images/spacing_img.png">
 			</div>
 
 			<!-- Présentation -->
 			<div class="col-12 col-md-6 d-flex align-items-center pt-5 pt-md-0">
-				<p class="text-white">Le système de grille de Bootstrap permet de disposer simplement différents composants d'une page.<br/>
-					<br/>
-					Son utilisation nécessite trois attributs :<br/>
-					&emsp;- .container : qui définit un cadre.<br/>
-					&emsp;- .row : qui définit une ligne dans ce cadre.<br/>
-					&emsp;- .col : qui définit une colonne dans une ligne.<br/>
-					<br/>
-					Une ligne contient au maximum 12 colonnes, on définira la taille d'une colonne à la déclaration de .col (exemple col-3 ou col-6).<br/>
-					<br/>
-					Une colonne seule dans une ligne dont la taille n'est pas spécifié prendra automatiquement une taille de 12.<br/>
-					<br/>
-					Plusieurs colonnes dont la taille ne serait pas spécifiés se diviseront équitablement l'espace de la ligne.<br/>
-					<br/>
-					Si une colonne dépasse la taille maximum d'une ligne elle sera affiché à la ligne suivante.<br/>
-					<a class="btn btn-outline-light float-right" href="https://getbootstrap.com/docs/4.0/layout/grid/">Source</a>
-				</p>
+				<div class="container-fluid text-white">
+					<div class="row">
+						<p>Bootstrap gère le padding et le margin en combinant différents attributs ce qui évite de créer une propriété CSS spécifique à un élément. L'exemple ici utilise des colonnes mais cela peu s'appliqué à n'importe quel élément.<br/>
+							<br/>
+						</p>
+					</div>
 
+					<div class="row text-white">
+						<div class="col">
+							Prefix :<br/>
+							&emsp;- .m = margin<br/>
+							&emsp;- .p = padding<br/>
+						</div>
+						<div class="col">
+							Cotés :<br/>
+							&emsp;- t = top<br/>
+							&emsp;- b = bottom<br/>
+							&emsp;- l = left<br/>
+							&emsp;- r = right<br/>
+							&emsp;- x = left et right<br/>
+							&emsp;- y = top et bottom<br/>
+						</div>
+						<div class="col">
+							Taille : <br/>
+							&emsp;- 0 <br/>
+							&emsp;- 1 = $spacer * 0.25<br/>
+							&emsp;- 2 = $spacer * 0.5<br/>
+							&emsp;- 3 = $spacer<br/>
+							&emsp;- 4 = $spacer * 1.5<br/>
+							&emsp;- 5 = $spacer * 3<br/>
+							&emsp;- auto
+						</div>
+					</div>
+					<div class="row">
+						<p>
+							<br/>
+							(auto permet de centrer un élément dont le parent possède l'attribut "display: bloc" ou une largeur définie)<br/>
+							($spacer correspond à une taille de 1rem par défaut)<br/>
+							(1rem correspond à la taille par défaut de votre page, défini dans la balise &lt;html&gt; généralement 16px)<br/>
+							<br/>
+							Exemples :<br/>
+							&emsp;- mx-auto = centre horizontalement l'élément<br/>
+							&emsp;- ml-2 = margin left de 2<br/>
+							&emsp;- py-3 = padding haut et bas de 3<br/>
+							&emsp;- m-5 = margin de tous les cotés de 5
+						</p>
+					</div>
+					
+					<a class="btn btn-outline-light float-right" href="https://getbootstrap.com/docs/4.0/utilities/spacing/">Source</a>
+				</div>
 			</div>
-
 
 
 		</div>
@@ -112,9 +144,9 @@
 			</div>
 
 			<div class="col-12 d-flex justify-content-center mb-2">
-				<a class="btn btn-outline-light mx-2" href="flexbox.html">Flexbox</a>
-				<a class="btn btn-outline-light mx-2" href="responsive.html">Responsive</a>
-				<a class="btn btn-outline-light mx-2" href="spacing.html">Spacing</a>
+				<a class="btn btn-outline-light mx-2" href="grid.html">Grid</a>
+				<a class="btn btn-outline-light mx-2" href="display.html">Display</a>
+				<a class="btn btn-outline-light mx-2" href="buttons.html">Buttons</a>
 			</div>
 
 			<div class="col-6 d-flex align-items-end">
@@ -148,7 +180,7 @@
 	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/font_awesome.js"></script>
 	<script type="text/javascript" src="../js/demonstration.js"></script>
-	<script type="text/javascript">fill('../html_exemples/grid_exemple.html');</script>
+	<script type="text/javascript">fill('../html_exemples/spacing_exemple.html');</script>
 	<script type="text/javascript">transfer();</script>
 </body>
 </html>
