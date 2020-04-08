@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Colors</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta NAME='Author' CONTENT='Renou Antoine'>
+	<meta NAME='Language' CONTENT='fr'>
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/menu.css">
+</head>
+<body class="bg-dark">
+	<div class="container-fluid p-0">
+
+		<!-- NavBar -->
+		<header>
+			<nav class="navbar navbar-expand-md navbar-dark p-3" id="navbar">
+				<a class="navbar-brand" href="../index.html">Home</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="#navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<ul class="collapse navbar-collapse align-items-start navbar-nav" id="navbarNavAltMarkup">
+					<li class="nav-item">
+						<a class="nav-link active" href="menu.html">Menu</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link" href="#">Exemples</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Random</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">À propos</a>
+					</li>
+					<li class="nav-item ml-auto">
+						<form class="form-inline">
+							<input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Search">
+							<button class="btn btn-outline-light my-2 my-sm-0 ml-auto" type="submit">Rechercher</button>
+						</form>
+					</li>
+				</ul>	
+
+			</nav>
+		</header>
+		<!-- Titre -->
+		<h1 class="text-center text-white mt-5 display-4">Colors</h1>
+
+		<div class="row p-4">
+			<!-- Image -->
+			<div class="col-12 col-md-6 d-flex justify-content-center">
+				<img class="img-fluid img-thumbnail" src="../images/colors_img.png">
+			</div>
+
+			<!-- Présentation -->
+			<div class="col-12 col-md-6 d-flex align-items-center pt-5 pt-md-0">
+				<p class="text-white">Neuf couleurs sont disponibles pour la plupart des éléments et une dixième pour les textes et liens.<br/>
+<br/>
+					Pour les utiliser il suffit d'appliquer ces suffixes :<br/>
+					&emsp;- bleu : .primary<br/>
+					&emsp;- gris : .secondary<br/>
+					&emsp;- vert : .success<br/>
+					&emsp;- rouge : .danger<br/>
+					&emsp;- jaune : .warning<br/>
+					&emsp;- turquoise : .info<br/>
+					&emsp;- blanc/gris : .light<br/>
+					&emsp;- noir : .dark<br/>
+					&emsp;- blanc : .white<br/>
+					&emsp;- un deuxième gris pour les textes et liens : .muted<br/>
+<br/>
+					Ces suffixes peuvent s'appliquer après les préfixes suivant :<br/>
+					&emsp;- texte/lien : .text<br/>
+					&emsp;- background : .bg<br/>
+					&emsp;- bouttons : .btn<br/>
+<br/>
+					Exemples :<br/>
+					&emsp;- bg-primary (background bleu)<br/>
+					&emsp;- text-danger (texte ou lien rouge)<br/>
+					&emsp;- btn-success (bouton vert)<br/>
+					<a class="btn btn-outline-light float-right" href="https://getbootstrap.com/docs/4.0/utilities/colors/">Source</a>
+				</p>
+
+			</div>
+
+
+
+		</div>
+
+		<!-- Démonstration -->
+		<div class="row justify-content-center">
+			<h1 class="text-center text-white display-4 pt-0 pb-5">Démonstration</h1>
+		</div>
+		
+		<div class="row mx-4">
+			<!-- Code -->
+			<div class="col-12 col-md-5">
+				<div contenteditable="true" spellcheck="false" class="form-control ml-4 mb-4 bg-dark" style="width: 90%; height: 500px; overflow: auto;">
+
+					<pre id="code" class="text-white">
+
+					</pre>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-2 d-flex justify-content-center align-items-center mt-4">
+				<button class="btn btn-outline-light" onclick="transfer()">Test Code</button>
+			</div>	
+
+			<!-- Visuel -->
+			<div id="visuel" class="col-12 my-3 col-md-5 d-flex align-items-center">
+				
+			</div>
+
+		</div>
+		
+		<!-- Aller plus loin -->
+		<div class="row pt-4">
+
+			<div class="col-12 d-flex justify-content-center mb-2">
+				<h4 class="display-5 text-white">Aller plus loin </h4>:
+			</div>
+
+			<div class="col-12 d-flex justify-content-center mb-2">
+				<a class="btn btn-outline-light mx-2" href="buttons.html">Buttons</a>
+				<a class="btn btn-outline-light mx-2" href="link.html">Link</a>
+				<a class="btn btn-outline-light mx-2" href="text.html">Text</a>
+			</div>
+
+			<div class="col-6 d-flex align-items-end">
+				<button type="button" class="btn btn-outline-light ml-5">
+					<i class="fa fa-chevron-left text-left"></i> 
+				</button>
+			</div>
+
+			<div class="col-6 d-flex justify-content-end align-items-end">
+				<button type="button" class="btn btn-outline-light mr-5">
+					<i class="fa fa-chevron-right text-left"></i> 
+				</button>
+			</div>
+
+		</div>
+
+		<!-- Footer -->
+		<div class="row mt-5 border-top p-4" id="footer">
+			<div class="col-12 text-center">
+
+				Antoine Renou - Source : <a class="btn btn-outline-light rounded border-white" href="https://getbootstrap.com/">Bootstrap</a>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!--Script-->
+	<script type="text/javascript" src="../bootstrap/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/popper.min.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/font_awesome.js"></script>
+	<script type="text/javascript" src="../js/demonstration.js"></script>
+	<script type="text/javascript">fill('../html_exemples/colors_exemple.html');</script>
+	<script type="text/javascript">transfer();</script>
+</body>
+</html>
