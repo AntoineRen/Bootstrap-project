@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Responsive</title>
+	<title>Display</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta NAME='Author' CONTENT='Renou Antoine'>
@@ -44,37 +44,42 @@
 			</nav>
 		</header>
 		<!-- Titre -->
-		<h1 class="text-center text-white mt-5 display-4">Responsive Web Design</h1>
+		<h1 class="text-center text-white mt-5 display-4">Display</h1>
 
 		<div class="row p-4">
 			<!-- Image -->
 			<div class="col-12 col-md-6 d-flex justify-content-center">
-				<img class="img-fluid img-thumbnail" src="../images/responsive_img.png">
+				<img class="img-fluid img-thumbnail" src="../images/display_img.png">
 			</div>
 
 			<!-- Présentation -->
 			<div class="col-12 col-md-6 d-flex align-items-center pt-5 pt-md-0">
-				<p class="text-white">Une des principale valeur de Bootstrap est d'être un framework responsive,
-					c'est à dire que n'importe lequels de ses composants peut s'adapter à différentes taille d'écrans.<br/>
+				<p class="text-white">Bootstrap redéfini une partie des propriétés display accessiblent en CSS classique, ce qui permet de gérer l'affichage de différents éléments.<br/>
 					<br/>
-					Bootstrap s'adapte à 5 tailles par défauts :<br/>
-					&emsp;- Extra Small, largeur d'écran < 576px - pas de préfixe<br/>
-					&emsp;- Small, largeur d'écran >= 576px - préfixe .sm<br/>
-					&emsp;- Medium, largeur d'écran >= 768px - préfixe .md<br/>
-					&emsp;- Large, largeur d'écran >= 992px - préfixe .lg<br/>
-					&emsp;- Extra Large, largeur d'écran >= 1200px - préfixe .xl<br/>
+					Les attributs suivants permettent de donner un style spécifique à un élément :<br/>
+					&emsp;- .d-none = élément invisible<br/>
 					<br/>
-					Ces différents préfixes peuvent s'utiliser sur certains des attributs Bootstrap <br/>
-					ce qui modifiera l'affichage d'un composant en fonction de la largeur de l'écran de l'utilisateur.<br/>
+					&emsp;- .d-inline = élément affiché en ligne<br/>
+					&emsp;&emsp;- hauteur et largeur non modifiable<br/>
+					&emsp;&emsp;- l'élément sera séparé en deux lorsqu'il dépasse la taille maximale d'une ligne<br/>
 					<br/>
-					Exemples : <br/>
-					&emsp;- les colonnes (col-md-3, col-sm-12, ...) <br/>
-					&emsp;- l'affichage où non d'un élément (d-sm-none, d-md-block, ...)<br/>
-					&emsp;- la taille d'un container (container-md, container-sm, ...)<br/>
-					&emsp;- la position d'un élément (float-sm-left, float-xl-right, ...)<br/>
-					&emsp;- le margin et padding (m-md-5, p-xl-4, etc ...)<br/>
+					&emsp;- .d-block = élément affiché en block (verticalement, un par ligne)<br/>
+					&emsp;&emsp;- l'élement occupera toute la ligne si aucune largeur n'est spécifiée<br/>
+					&emsp;&emsp;- l'élement passera à la ligne suivante losqu'il dépasse la taille maximale d'une ligne<br/>
 					<br/>
-					Et sans doute bien d'autres !<a class="btn btn-outline-light float-right" href="https://getbootstrap.com/docs/4.4/layout/overview/#responsive-breakpoints">Source</a>
+					&emsp;- .d-inline-block = élément affiché en block et en ligne<br/>
+					&emsp;&emsp;- l'élement passera à la ligne suivante losqu'il dépasse la taille maximale d'une ligne<br/>
+					<br/>
+					&emsp;- .d-table = élément affiché sous la forme d'un tableau<br/>
+					<br/>
+					&emsp;- .d-table-row = élément affiché sous la forme d'une ligne de tableau<br/>
+					<br/>
+					&emsp;- .d-table-cell = élément affiché sous la forme d'une cellule de tableau<br/>
+					<br/>
+					&emsp;- .d-flex = élément affiché sous la forme d'un container flexbox (cf Flex)<br/>
+					<br/>
+					&emsp;- .d-inline-flex = élément affiché sous la forme d'un container flexbox en ligne (cf Flex)<br/>
+					<a class="btn btn-outline-light float-right" href="https://getbootstrap.com/docs/4.0/utilities/display/">Source</a>
 				</p>
 
 			</div>
@@ -118,9 +123,9 @@
 			</div>
 
 			<div class="col-12 d-flex justify-content-center mb-2">
+				<a class="btn btn-outline-light mx-2" href="flex.html">Flex</a>
+				<a class="btn btn-outline-light mx-2" href="responsive.html">Responsive</a>
 				<a class="btn btn-outline-light mx-2" href="grid.html">Grid</a>
-				<a class="btn btn-outline-light mx-2" href="spacing.html">Spacing</a>
-				<a class="btn btn-outline-light mx-2" href="display.html">Display</a>
 			</div>
 
 			<div class="col-6 d-flex align-items-end">
@@ -154,7 +159,7 @@
 	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/font_awesome.js"></script>
 	<script type="text/javascript" src="../js/demonstration.js"></script>
-	<script type="text/javascript">fill('../html_exemples/responsive_exemple.html');</script>
+	<script type="text/javascript">fill('../html_exemples/display_exemple.html');</script>
 	<script type="text/javascript">transfer();</script>
 </body>
 </html>
